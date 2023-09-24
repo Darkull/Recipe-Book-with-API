@@ -1,0 +1,139 @@
+/*
+--- 01 - TYPHOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight:
+    Default: 400
+    Medium:
+    semi-bold:
+    bold:
+
+- Line heights:
+    Default: 1
+    small:
+    Medium:
+    Paragraph Default: 1.6
+
+
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Letter Spacing
+-0.5px
+- 0.75px
+
+
+
+
+--- 02 COLORS
+
+- Primary:
+
+    Tints:
+
+
+
+    Shades:
+    Accents:
+    Greys: #555 , #333
+
+
+---- 05 SHADOWS
+
+  - 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+---- 06 BORDER-Radius
+    Default:
+    Medium:
+
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+header {
+  background: #333;
+  padding: 2rem;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 2rem;
+}
+
+.recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.recipe-item img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.recipe-item h2 {
+  margin: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  min-width: 20rem;
+}
+
+.recipe-item p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.recipe-item a {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: background 0.3s ease;
+  margin-right: 1rem;
+  border-radius: 3px;
+}
+
+.recipe-item a:hover {
+  background-color: #ccc;
+  color: #333;
+}
