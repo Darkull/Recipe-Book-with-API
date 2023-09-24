@@ -137,3 +137,33 @@ header h1 {
   background-color: #ccc;
   color: #333;
 }
+
+/* Media Queriy */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .recipe-item {
+    flex-direction: column;
+  }
+
+  .recipe-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .recipe-item h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .recipe-item p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .recipe-item a {
+    width: 100%;
+    text-align: center;
+  }
+}
