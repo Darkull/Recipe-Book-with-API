@@ -9,11 +9,33 @@ function displayRecipes(recipes) {
   recipes.forEach((recipe) => {
     const recipeItemEL = document.createElement("li");
     recipeItemEL.classList.add("recipe-item");
+
+    // image
     const recipeImageEL = document.createElement("img");
     recipeImageEL.src = recipe.image;
     recipeImageEL.alt = "recipe img";
 
+    // title
+    const recipeTitleEL = document.createElement("h2");
+    recipeTitleEL.innerText = recipe.title;
+
+    // Ingredients
+    const recipeIngredientsEL = document.createElement("p");
+    recipeIngredientsEL.innerHTML = `
+        <strong>Ingredients:</strong> ${recipe.extendedIngredients
+          .map((ingredient) => ingredient.original)
+          .join(", ")}
+    `;
+
+    // link
+    const recipeLinkEL = document.createElement("a");
+    recipeLinkEL.href = recipe.sourceUrl;
+    recipeLinkEL.innerText = "View Recipe";
+
     recipeItemEL.appendChild(recipeImageEL);
+    recipeItemEL.appendChild(recipeTitleEL);
+    recipeItemEL.appendChild(recipeIngredientsEL);
+    recipeItemEL.appendChild(recipeLinkEL);
     recipeListEL.appendChild(recipeItemEL);
   });
 }

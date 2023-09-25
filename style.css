@@ -129,13 +129,29 @@ header h1 {
   text-transform: uppercase;
   font-size: 1.4rem;
   transition: background 0.3s ease;
-  /* margin-right: 1rem; */
-  border-radius: 3px;
 }
 
 .recipe-item a:hover {
   background-color: #ccc;
   color: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #555;
+}
+
+footer p a:hover {
+  color: #b197fc;
+}
+footer p a:active {
+  color: #9775fa;
 }
 
 /* Media Queriy */
